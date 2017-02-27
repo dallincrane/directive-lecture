@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Directive Lecture</title>
+  </head>
+  <body>
+    <div ng-app="directiveLecture">
+      <div ng-controller="testCtrl">
+
+        <test-directive
+          test="string binding"
+          first-name="firstName"
+          last-name="lastName"
+          alert-my-name="showName()"
+        >
+        </test-directive>
+
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+    <script src="app.js"></script>
+    <script src="testCtrl.js"></script>
+    <script src="directiveCtrl.js"></script>
+    <script src="testDirective.js"></script>
+    <script src="dataService.js"></script>
+  </body>
+</html>
